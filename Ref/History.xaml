@@ -1,0 +1,128 @@
+﻿<UserControl x:Class="Ref.History"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" Height="412.5" Width="704">
+    <Grid Width="Auto" Height="513" Margin="-73,-16,0,-85" VerticalAlignment="Bottom" Background="White">
+        <Separator HorizontalAlignment="Left" Height="100" Margin="68,10,0,0" VerticalAlignment="Top" Width="561"/>
+        <TextBlock HorizontalAlignment="Left" Margin="70,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="179" FontSize="24" Foreground="#FF131111"><Run Language="en-in" Text="History"/><LineBreak/><Run Language="en-in"/></TextBlock>
+        <Separator HorizontalAlignment="Left" Height="29" Margin="74,44,0,0" VerticalAlignment="Top" Width="555" Background="Black" BorderThickness="1"/>
+        <Image HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" Width="100" Margin="540,15,0,0"/>
+        <DataGrid Height="372" Width="709" HorizontalAlignment="Left" Margin="58,113,0,0" 
+          Name="datagrid1" VerticalAlignment="Top" RowHeight="30" ColumnWidth="100" 
+                  ColumnHeaderHeight="25" HeadersVisibility="Column"
+                  Background="LightGray" RowBackground="LightYellow" 
+                    AlternatingRowBackground="LightBlue"
+                  BorderBrush="Gray" BorderThickness="1" AutoGenerateColumns="False">
+
+            <DataGrid.Columns>
+
+                <DataGridTextColumn 
+                Header="  Hyper-V Name" 
+                Width="120" 
+                Binding="{Binding hname}" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                    <DataGridTextColumn.EditingElementStyle>
+                        <Style TargetType="TextBox">
+                            <Setter Property="Foreground" Value="Blue"/>
+                        </Style>
+                    </DataGridTextColumn.EditingElementStyle>
+                </DataGridTextColumn>
+
+
+                <DataGridTextColumn 
+                Header="          VM Name"
+                Width="130"
+                Binding="{Binding vname}" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                    <DataGridTextColumn.EditingElementStyle>
+                        <Style TargetType="TextBox">
+                            <Setter Property="Foreground" Value="Blue"/>
+                        </Style>
+                    </DataGridTextColumn.EditingElementStyle>
+                </DataGridTextColumn>
+
+
+                <DataGridTextColumn 
+                Header="        File Name"
+                Width="130"
+                Binding="{Binding fname}" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                    <DataGridTextColumn.EditingElementStyle>
+                        <Style TargetType="TextBox">
+                            <Setter Property="Foreground" Value="Blue"/>
+                        </Style>
+                    </DataGridTextColumn.EditingElementStyle>
+                </DataGridTextColumn>
+
+
+
+                <DataGridTextColumn 
+                Header="            Action"
+                Width="110"
+                Binding="{Binding action}" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"  />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                    <DataGridTextColumn.EditingElementStyle>
+                        <Style TargetType="TextBox">
+                            <Setter Property="Foreground" Value="Blue"/>
+                        </Style>
+                    </DataGridTextColumn.EditingElementStyle>
+                </DataGridTextColumn>
+
+
+                <DataGridTextColumn 
+                Header="      Time"
+                Width="130"
+                Binding="{Binding time}" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                    <DataGridTextColumn.EditingElementStyle>
+                        <Style TargetType="TextBox">
+                            <Setter Property="Foreground" Value="Blue"/>
+                        </Style>
+                    </DataGridTextColumn.EditingElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn 
+                Header="      status"
+                Width="130"
+                Binding="{Binding status}" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                    <DataGridTextColumn.EditingElementStyle>
+                        <Style TargetType="TextBox">
+                            <Setter Property="Foreground" Value="Blue"/>
+                        </Style>
+                    </DataGridTextColumn.EditingElementStyle>
+                </DataGridTextColumn>
+
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</UserControl>

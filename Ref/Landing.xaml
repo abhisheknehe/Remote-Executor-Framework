@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="Ref.Landing"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="294.208" Width="303.475">
+    <Grid HorizontalAlignment="Right" Width="303" Height="294" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.497">
+
+        <Image Margin="-111,40,333,187" Source="hyperv symbol.PNG" Stretch="Fill"/>
+        <TextBlock Name="hname" HorizontalAlignment="Left" Margin="28,35,-45,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" SnapsToDevicePixels="True" Width="320" Foreground="#FF111010"><Run Language="en-in" Text="Hyper V - Hyper v NAME"/></TextBlock>
+        <Separator HorizontalAlignment="Left" Height="24" Margin="28,68,-33,0" VerticalAlignment="Top" Width="308"/>
+        <TextBlock  Name="hinfo" HorizontalAlignment="Left" Margin="28,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF151313"><Run Language="en-in" Text="Hyper V Info..........."/><LineBreak/><Run Language="en-in"/></TextBlock>
+         <TextBlock  Name="hver" HorizontalAlignment="Left" Margin="28,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF151313"><Run Language="en-in" Text="Hyperv ver"/><LineBreak/><Run Language="en-in"/></TextBlock>
+
+    </Grid>
+</UserControl>
